@@ -9,7 +9,7 @@ while(True):
     to_hash = block + str(nonce)
     to_hash_byte = to_hash.encode()
     hash = hashlib.sha256(to_hash_byte).hexdigest()
-    if (hash[0:3]=="000"):
+    if (hash[0:3]=="00"):
         print(to_hash)
         print(hash)
         break
